@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    
+               
+    
+
+    <div class="inner cover">
+
+        <h1 class="cover-heading" >Predict legitimacy of websites</h1>
+        <div style="height:25px">
+        <img  id="loading" src="/static/ajax-loader.gif" height="25" width="25" alt="Loading..." />
+        </div> <br>
+        <form action ='/predict' method='post'>
+	       <input class="form-control" type = 'text' name = 'url'>
+            <br>
+	       <input class="btn btn-lg btn-default" type="submit" value="Predict"> 
+        </form> 
+    </div>
+{% endblock %}
