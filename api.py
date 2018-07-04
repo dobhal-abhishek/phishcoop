@@ -4,8 +4,15 @@ from sklearn.externals import joblib
 import inputScript
 import regex
 
+import sys
+import logging
+
 
 app = Flask(__name__)
+
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
+
 
 @app.route('/')
 @app.route('/index')
@@ -39,4 +46,4 @@ def make_prediction():
         
 if __name__ == '__main__':
     classifier = joblib.load('rf_final.pkl')
-    app.run(host='0.0.0.0', port=8000, debug=True)
+    app.run()
