@@ -25,6 +25,7 @@ def about():
 
 @app.route('/predict', methods = ['POST'])
 def make_prediction():
+    classifier = joblib.load('rf_final.pkl')
     if request.method=='POST':
         url = request.form['url']
         if not url:
