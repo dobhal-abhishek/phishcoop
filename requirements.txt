@@ -8,7 +8,7 @@ gunicorn==19.9.0
 idna==2.7
 itsdangerous==0.24
 Jinja2==2.10
-lxml==4.2.2
+lxml==4.6.5
 MarkupSafe==1.0
 numpy==1.14.5
 python-whois==0.7.0
