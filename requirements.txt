@@ -10,7 +10,7 @@ itsdangerous==0.24
 Jinja2==2.10
 lxml==4.2.2
 MarkupSafe==1.0
-numpy==1.14.5
+numpy==1.22.0
 python-whois==0.7.0
 regex==2018.6.21
 requests==2.19.1
